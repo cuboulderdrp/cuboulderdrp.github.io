@@ -1,0 +1,128 @@
+/*
+ * DRP accents: original Academic Pages typography and layout remain in charge.
+ * Gold provides restrained CU Boulder branding, not a replacement UI.
+ */
+:root {
+  --drp-gold: #b39249;
+  --drp-gold-bright: #cfb87c;
+  --drp-muted-surface: #faf8f2;
+}
+html[data-theme="dark"] { --drp-gold: #cfb87c; --drp-muted-surface: #242322; }
+.masthead { border-top: 4px solid #cfb87c; }
+.masthead__menu-item.selected a {
+  border-bottom-color: #b39249;
+}
+.page__title {
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.018em;
+}
+.page__content .drp-eyebrow {
+  color: var(--drp-gold);
+  font-size: .77em;
+  font-weight: 700;
+  letter-spacing: .115em;
+  text-transform: uppercase;
+  margin: .1em 0 1em;
+}
+.page__content .drp-lede {
+  font-size: 1.14em;
+  line-height: 1.67;
+  margin: 0 0 1.25em;
+}
+.page__content .drp-section-title {
+  border-bottom: 1px solid var(--global-border-color);
+  padding-bottom: .45em;
+  margin-top: 1.6em;
+}
+.page__content .drp-section-title::before {
+  content: "";
+  display: inline-block;
+  height: .70em;
+  width: 4px;
+  background: #cfb87c;
+  margin-right: .52em;
+  vertical-align: -.02em;
+}
+.page__content .drp-deadline {
+  border-left: 4px solid #cfb87c;
+  background: var(--drp-muted-surface);
+  padding: .9em 1.2em;
+  margin: 1.35em 0 1.5em;
+}
+.drp-deadline p:last-child { margin-bottom: 0; }
+.drp-deadline .drp-deadline-heading {
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-weight: 700;
+  font-size: .75em;
+  margin: 0 0 .55em;
+  color: var(--drp-gold);
+}
+.page__content .drp-links {
+  padding-left: 1.15em;
+}
+.page__content .drp-links li {
+  margin-bottom: .45em;
+}
+.page__content .drp-note {
+  font-size: .91em;
+  color: var(--global-text-color);
+  opacity: .84;
+}
+.page__content .drp-project {
+  margin: 1.85em 0 2.35em;
+  border-bottom: 1px solid var(--global-border-color);
+  padding-bottom: 1.8em;
+}
+.page__content .drp-project:last-of-type {
+  border-bottom: 0;
+}
+.page__content .drp-project h2 {
+  color: var(--global-text-color);
+  border: 0;
+  padding: 0;
+  margin: 0 0 .4em;
+  font-size: 1.35em;
+  line-height: 1.3;
+}
+.page__content .drp-project h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: .92em;
+  background-color: #cfb87c;
+  vertical-align: -.09em;
+  margin-right: .48em;
+}
+.page__content .drp-mentor {
+  font-size: .92em;
+  margin: 0 0 1em;
+}
+.drp-project .drp-label {
+  font-size: .77em;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--drp-gold);
+  margin: 0 0 .3em;
+}
+.page__content .drp-project p.drp-description {
+  margin-bottom: 1.1em;
+}
+.page__content .drp-project .drp-field {
+  margin-bottom: 1.05em;
+}
+.drp-project .drp-field p:last-child { margin-bottom: 0; }
+.page__content .drp-mentor-bio {
+  font-size: .94em;
+  margin: 1em 0 0;
+  padding: .75em .95em;
+  border-left: 2px solid var(--global-border-color);
+}
+.drp-project .drp-mentor-bio strong { color: var(--global-text-color); }
+.page__content .drp-responsibilities li { margin-bottom: .55em; }
+@media (max-width: 650px) {
+  .page__content .drp-project h2 { font-size: 1.19em; }
+  .page__content .drp-deadline { padding: .8em 1em; }
+}

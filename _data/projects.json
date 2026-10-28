@@ -1,0 +1,114 @@
+[
+  {
+    "id": "project-01",
+    "title": "To the Moon and Back!",
+    "project": "Implement a numerical method to solve an ordinary differential equation modeling a spacecraft trajectory. Find interesting orbital transfers between the Earth and Moon. If time allows, replicate real-life Apollo and Artemis mission trajectories using the model!",
+    "prior_experience": "APPM 2360 - Differential Equations, beginner familiarity with Python, MATLAB, Julia, or C++.",
+    "reading_materials": "Lectures in Computational Physics by V. Vovchenko",
+    "mentor": "Graham Mauer",
+    "mentor_bio": "Graham develops fast, accurate computational approaches to physics problems. His website features videos of his work.",
+    "mentor_website": "https://grahammauer.github.io",
+    "topics": [
+      "Orbital mechanics",
+      "Numerical ODEs"
+    ]
+  },
+  {
+    "id": "project-02",
+    "title": "Fun while falling through fluids",
+    "project": "Why does a feather fall more slowly than a bowling ball? How does water resistance change the motion of a falling object? We will explore the mathematics behind these questions by studying how fluids resist motion. We'll talk about drag, viscosity, and terminal velocity, and use differential equations to predict how objects move through air and water. We will then use Python to simulate falling objects.",
+    "prior_experience": "Calculus 1-3, Differential Equations. Some coding experience recommended but not required.",
+    "reading_materials": "D. J. Acheson, *Elementary Fluid Dynamics* (selected chapters on viscous flow), supplemented by introductory numerical ODE methods.",
+    "mentor": "Emma Opper",
+    "mentor_bio": "Emma develops fluid models for spacecraft in the upper atmosphere, combining machine learning, numerical methods, and atmospheric science.",
+    "mentor_website": "https://emmaopper.github.io",
+    "topics": [
+      "Fluid dynamics",
+      "Simulation"
+    ]
+  },
+  {
+    "id": "project-03",
+    "title": "Duffing Oscillator: Jumping into the Quantum Realm",
+    "project": "You have seen how oscillators behave classically, but what happens when we step into the quantum realm? In this project, we will explore the Duffing Oscillator. We will start by studying its classical behavior, then investigate what changes when we describe the system using quantum mechanics. Through hands-on calculations and numerical simulations, we will explore how and why these differences occur. If time permits, we can even dive into the fascinating world of chaos!",
+    "prior_experience": "Differential Equations. Coding experience not required, just a willingness to learn!",
+    "reading_materials": "S. Strogatz, Nonlinear Dynamics and Chaos (selected chapters on oscillators and chaos), supplemented by additional papers as needed.",
+    "mentor": "David Mead",
+    "mentor_bio": "David investigates how classical behavior influences quantum mechanics through analytical, theoretical, and numerical methods.",
+    "mentor_website": "",
+    "topics": [
+      "Quantum mechanics",
+      "Dynamical systems"
+    ]
+  },
+  {
+    "id": "project-04",
+    "title": "Equations from thin air: Does chaos help the SINDy method?",
+    "project": "Scientists and engineers use differential equations to model time-evolving systems. For systems with unknown mechanisms, however, deriving equations might be hard to do. With enough data, and some luck, the SINDy method can pull a set of equations out of thin air. In this project, we will study how the SINDy method performs when the time-evolving system is chaotic. Chaos is characterized by unpredictability, but work published in the last few years seems to disagree about whether it makes the equations easier or harder to obtain. We will answer this question by crash-testing the SINDy method on some example systems and measuring the effect of chaos on its success.",
+    "prior_experience": "Experience or willingness to learn Python!",
+    "reading_materials": "S. H. Strogatz, Nonlinear dynamics and chaos: with applications to physics, biology, chemistry, and engineering. CRC press. (on library website)",
+    "mentor": "Nick John",
+    "mentor_bio": "Nick applies and develops statistical methods for weather and climate, with recent work focused on hurricanes.",
+    "mentor_website": "https://nicholas-john.github.io",
+    "topics": [
+      "Chaos",
+      "Data science"
+    ]
+  },
+  {
+    "id": "project-05",
+    "title": "The Mathematics of Excitable Cells",
+    "project": "How does the heart pump blood? What makes neurons fire? In this project, we will explore mathematical models of the action potential, a sequence of rapid changes in the cellular membrane potential that cells use to send signals to other cells. We will discuss how action potentials propagate throughout tissue, use techniques from differential equations to analytically study the behavior of excitable cells, and conduct numerical experiments of single cell models. This project is very flexible and can be directed based on student interest!",
+    "prior_experience": "APPM 2360 (differential equations), some coding experience preferred.",
+    "reading_materials": "Mathematical Foundations of Neuroscience by G.B. Ermentrout and D. Terman, supplemented with reading on numerical ODE methods as needed",
+    "mentor": "Grace Moberg",
+    "mentor_bio": "Grace uses tools including partial differential equations and machine learning to study complex social and biological phenomena.",
+    "mentor_website": "",
+    "topics": [
+      "Mathematical biology",
+      "Differential equations"
+    ]
+  },
+  {
+    "id": "project-06",
+    "title": "Mission: Impossi-Blur",
+    "project": "How can an iPhone deblur an out-of-focus photograph? How can a film studio remaster the image quality of an old movie? The focus of this project is on inverse problems, in which the presence of noise in a system creates an ill-posed (and therefore difficult to solve) problem. In other words, we seek in this application to recover the original image from noisy, blurred measurements. To do so, we will study the theory that motivates some of the most prevalent classical deblurring algorithms, while also developing an understanding on how imaging data is processed, stored, and worked with on a computer. The end goal is to implement code for these various numerical methods so that we can explore how they perform against different datasets.",
+    "prior_experience": "Calculus 1-3, some experience with linear algebra (APPM 2360 or 3310). Some coding experience recommended.",
+    "reading_materials": "",
+    "mentor": "Robby Pawloski",
+    "mentor_bio": "Robby develops numerical algorithms in computational mathematics, with research in Bayesian optimization and interests in numerical linear algebra and inverse problems.",
+    "mentor_website": "",
+    "topics": [
+      "Inverse problems",
+      "Imaging"
+    ]
+  },
+  {
+    "id": "project-07",
+    "title": "Which quantization wins? Exploring numerical linear algebra through language models",
+    "project": "Quantization is a way of trading away numerical precision to gain speed and storage space. There are several ways of quantizing the data needed to run language models during live conversation, each offering a different theory on why they're the best. With this project, you will pit different kinds of KV cache quantization against each other to test the makers' claims. You will identify the matrix structure assumptions behind at least two existing quantization methods, adopt a fair way to measure their effects on model outputs, and weigh the pros and cons of each. Along the way, you'll develop an understanding of the linear algebra that powers language models like ChatGPT and discover how different math is on the computer compared to the chalkboard! Time permitting, you may even be able to use your observations to propose an improvement on one of the methods. This is a real, open research question in machine learning! No ML or AI experience is required; you will build up everything you need from linear algebra foundations.",
+    "prior_experience": "Linear algebra experience required. Basic Python experience required, intermediate Python experience *highly* recommended as this project will involve extensive data analysis and visualization. No GPU or harness build out required; I have the hardware and test environment available for you!",
+    "reading_materials": "Trefethen & Bau, Numerical Linear Algebra (selected chapters). \"A White Paper on Neural Network Quantization\", Nagel et al, 2021 (selected sections). Various recent research papers on quantization methods like *KIVI* and *GEAR*.",
+    "mentor": "Nikole Scribner Trout",
+    "mentor_bio": "Nikole works on fast, accurate direct solvers for differential equations and studies how and why numerical methods work.",
+    "mentor_website": "",
+    "topics": [
+      "Linear algebra",
+      "Machine learning"
+    ]
+  },
+  {
+    "id": "project-08",
+    "title": "What was that noise?",
+    "project": "Simulating the scattering of acoustic and electromagnetic wave off of objects is essential to many sensing technologies, including geophysical sensing and radar. In this project, we will explore the Helmholtz partial differential equation, which describes acoustic scattering and time-harmonic electromagnetic wave scattering. After taking a deep dive into the theory behind such wave scattering problems, we'll use a coding language of your choice to simulate waves scattering off of an obstacle in 2D.",
+    "prior_experience": "Calculus 1-3, Differential equations, Linear Algebra (Matrix Methods or similar). Some coding experience (Python, Julia, MATLAB).",
+    "reading_materials": "Applied Partial Differential Equations with Fourier Series and Boundary Value Problems",
+    "mentor": "Jonathan Shaw",
+    "mentor_bio": "Jonathan develops numerical methods for integral equations arising in acoustic and electromagnetic wave scattering.",
+    "mentor_website": "https://jonathan-d-shaw.github.io/",
+    "topics": [
+      "Wave scattering",
+      "PDEs"
+    ]
+  }
+]

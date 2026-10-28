@@ -1,0 +1,32 @@
+---
+layout: single
+permalink: /projects/
+title: "Proposed Projects"
+author_profile: false
+---
+
+<p class="drp-eyebrow">Spring 2027 · Undergraduate research topics</p>
+
+<p>These eight projects have been proposed by graduate student mentors. Project statements, prior experience requirements, and reading materials are presented as submitted. Final availability depends on mentor selection and undergraduate interest.</p>
+
+{% for project in site.data.projects %}
+<section class="drp-project" id="{{ project.id }}">
+  <h2>{{ project.title | escape }}</h2>
+  <p class="drp-mentor"><strong>Mentor:</strong> {% if project.mentor_website != '' %}<a href="{{ project.mentor_website }}">{{ project.mentor | escape }}</a>{% else %}{{ project.mentor | escape }}{% endif %}</p>
+  <p class="drp-label">Project</p>
+  <p class="drp-description">{{ project.project | escape }}</p>
+  <div class="drp-field">
+    <p class="drp-label">Prior experience</p>
+    {{ project.prior_experience | markdownify }}
+  </div>
+  {% if project.reading_materials != '' %}
+  <div class="drp-field">
+    <p class="drp-label">Reading materials</p>
+    {{ project.reading_materials | markdownify }}
+  </div>
+  {% endif %}
+  <p class="drp-mentor-bio"><strong>About the mentor:</strong> {{ project.mentor_bio | escape }}</p>
+</section>
+{% endfor %}
+
+<p>Interested in a project? Read the <a href="{{ '/apply/' | relative_url }}">application details and expectations</a>.</p>
